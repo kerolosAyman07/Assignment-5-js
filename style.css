@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #1e202b;
+}
+
+.nav-item a{
+    border: 2px solid #1e202b !important; 
+    transition: 0.3s !important;
+}
+
+.nav-item a:hover , .nav-item a.active{
+    border: 2px solid #009bd9 !important;
+    color: #009bd9 !important;
+}
+
+.logo-info p{
+    font-size: 10px;
+    color: #bfc1c7;
+}
+
+header{
+    height: 100vh;
+    background-color: #1e202b;
+}
+
+.weather-input input{
+    background-color: #1e202b;
+}
+
+.weather-input button{
+    top: 6px;
+    right: 13%;
+    padding-block: 10px;
+    background-color: #009bd9;
+}
+
+.container{
+    top: 25%;
+}
+
+.card-1{
+    background-color: #333645;
+}
+
+.card-2{
+    background-color: #252836;
+}
+
+.card-body h6{
+    color: #BFC1C8;
+}
+
+.card-title{
+    background-color: #2d303d;
+}
+
+.card-title p{
+    color: #BFC1C8;
+}
+
+.title{
+    background-color: #222530;
+}
+
+.card-body h1 , .temp_C{
+    font-size: 80px;
+}
+
+footer{
+    background-color: #252836;
+    height: 35vh;
+}
+
+.footer-input input{
+    background-color: #1e202b;
+}
+
+.footer-input button{
+    bottom: -265px;
+    right: 50.5%;
+    padding-block: 10px;
+    background-color: #009bd9;
+}
+
+.list ul li a{
+    background-color: #1e202b;
+    color: #009bd9;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.list ul li a:hover{
+    background-color: #009bd9;
+    color: white;
+}
+
+@media (min-width: 350px) and (max-width: 768px){
+    header{
+        height: 200vh;
+    }
+
+    .container{
+        top: 10%;
+    }
+    
+    .weather-input button{
+        right: 14%;
+    }
+
+    footer{
+        height: 45vh;
+    }
+
+    .footer-input button{
+        bottom: -146%;
+        right: 120px;
+    }
+
+    .footer-info{
+        flex-direction: column;
+    }
+} 
+
+@media (min-width: 769px) and (max-width: 990px){
+    .footer-input button{
+        bottom: -46%;
+    }
+} 
